@@ -16,44 +16,81 @@
       </div>
       <picture>
         <h1></h1>
-        <img
+        <!--  
+          <img
           srcset="
-            images/museum-320_x_180.jpg    320w,
-            images/museum-480_x_270.jpg    480w,
-            images/museum-720_x_405.jpg    720w,
-            images/museum-960_x_540.jpg    960w,
-            images/museum-1440_x_810.jpg  1440w,
-            images/museum-1920_x_1080.jpg 1920w
+          images/museum-320_x_180.jpg    320w,
+          images/museum-480_x_270.jpg    480w,
+          images/museum-720_x_405.jpg    720w,
+          images/museum-960_x_540.jpg    960w,
+          images/museum-1440_x_810.jpg  1440w,
+          images/museum-1920_x_1080.jpg 1920w
           "
           sizes="
-            (max-width: 320px) 320px,
-            (max-width: 480px) 480px,
-            (max-width: 720px) 720px,
-            (max-width: 960px) 960px"
+          (max-width: 320px) 320px,
+          (max-width: 480px) 480px,
+          (max-width: 720px) 720px,
+          (max-width: 960px) 960px"
           src="images/museum-320_x_180.jpg"
           alt="Museum"
-        />
-      </picture>
-      <picture>
-        <h1></h1>
-        <img
+          />
+        </picture>
+        <picture>
+          <h1></h1>
+          <img
           src="images/museum-480_x_480.jpg"
           alt="museum"
           srcset="
-            images/museum-960_x_960.jpg    960w,
-            images/museum-1280_x_1280.jpg 1280w,
-            images/museum-1440_x_1440.jpg 1440w,
-            images/museum-1600_x_1600.jpg 1600w,
-            images/museum-1920_x_1920.jpg 1920w
+          images/museum-960_x_960.jpg    960w,
+          images/museum-1280_x_1280.jpg 1280w,
+          images/museum-1440_x_1440.jpg 1440w,
+          images/museum-1600_x_1600.jpg 1600w,
+          images/museum-1920_x_1920.jpg 1920w
           "
           sizes="
-        (min-width: 1280px) 1280px,
-        (min-width: 1440px) 1440px,
-        (min-width: 1600px) 1600px,
-        (min-width: 1920px) 1920px
-        "
-        />
-      </picture>
-    </header>
+          (min-width: 1280px) 1280px,
+          (min-width: 1440px) 1440px,
+          (min-width: 1600px) 1600px,
+          (min-width: 1920px) 1920px
+          "
+          />
+        </picture>
+      -->
+
+
+      <Picture>
+        <source srcset="images/museum-320_x_180.jpg,
+        images/museum-640_x_360.jpg 2x,
+        images/museum-960_x_540.jpg 3x"
+        media="(max-width: 320px)">
+
+        <source srcset="images/museum-480_x_270.jpg,
+        images/museum-960_x_540.jpg 2x,
+        images/museum-1440_x_810.jpg 3x"
+        media="(max-width: 480px)">
+
+        <source srcset="images/museum-720_x_405.jpg,
+        images/museum-1440_x_810.jpg 2x,
+        images/museum-2160_x_1215.jpg 3x"
+        media="(max-width: 720px)">
+
+        <source srcset="images/museum-960_x_540.jpg,
+        images/museum-1920_x_1080.jpg 2x,
+        images/museum-2880_x_1621.jpg 3x"
+        media="(max-width: 960px)">
+
+        <source srcset="images/museum-800_x_800.jpg,
+        images/museum-1600_x_1600.jpg 2x,
+        images/museum-2400_x_2400.jpg 3x"
+        media="(min-width: 960px)">
+
+        <source srcset="images/museum-960_x_960.jpg,
+        images/museum-1920_x_1920.jpg 2x,
+        images/museum-2880_x_2880.jpg 3x"
+        media="(min-width: 960px)">
+
+        <img src="images/museum-320_x_180.jpg" alt="museum">
+      </Picture>
+      </header>
   </body>
 </html>
